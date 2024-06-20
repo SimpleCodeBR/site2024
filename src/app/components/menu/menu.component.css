@@ -1,0 +1,42 @@
+.logo img {
+    width: 170px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 240px);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 16px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.menu ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.menu > ul {
+    gap: 80px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.social {
+    display: flex;
+    gap: 16px;
+}
