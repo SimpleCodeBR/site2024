@@ -18,3 +18,7 @@ h1 {
     font-size: 3rem;
     font-weight: 400;
 }
+
+.invisible {
+    display: none !important;
+}

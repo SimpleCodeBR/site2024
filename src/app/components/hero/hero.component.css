@@ -3,8 +3,9 @@
     height: 100vh;
     overflow: hidden;
     display: flex;
-    justify-content: start;
-    align-items: end;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
     color: white;
 }
 
@@ -29,21 +30,30 @@
 }
 
 .hero-content {
-    padding: 120px;
+    padding: 64px 120px;
     position: relative;
     z-index: 1;
 }
 
 .cta {
     padding: 8px 32px;
-    border: solid 1px #fff;
+    border: solid 2px #fff;
     border-radius: 4px;
     background-color: transparent;
     color: white;
     text-decoration: none;
     font-size: 1rem;
+    font-weight: 600;
 }
 
 .cta:hover {
     background-color: rgba(255, 255, 255, 0.2);
+}
+
+.scroll {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
 }
