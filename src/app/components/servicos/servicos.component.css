@@ -1,5 +1,5 @@
 section {
-    background-color: #f2f4f8;
+    background-color: #f1f2f4;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
 }
@@ -21,7 +21,7 @@ img {
 }
 
 .text {
-    padding: 16px;
+    padding: 40px;
 }
 
 .stats {
