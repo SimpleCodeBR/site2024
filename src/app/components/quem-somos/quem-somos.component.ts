@@ -11,7 +11,7 @@ import { ScrollTrigger, gsap } from 'gsap/all';
 export class QuemSomosComponent implements OnInit {
     ngOnInit(): void {
         gsap.registerPlugin(ScrollTrigger);
-        gsap.from('h2', {
+        gsap.from('.quem-somos', {
             scrollTrigger: {
                 trigger: 'section',
                 start: 'top center',

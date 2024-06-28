@@ -1,15 +1,34 @@
 section {
-    padding: 32px 120px;
-    display: flex;
-    gap: 64px;
-}
-
-section > div {
-    flex: 1;
+    background-color: #eaeaea;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
 img {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ux-title {
+    grid-column-start: 1;
+    padding: 120px;
+    background-color: #fabe0e;
+}
+
+.ux-title h2 {
+    font-size: 2.4em;
+    font-weight: 500;
+}
+
+.ux-text {
+    grid-column-start: 2;
+    padding: 32px;
+}
+
+.dev-title {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    padding: 32px;
+    background-color: #fabe0e;
 }

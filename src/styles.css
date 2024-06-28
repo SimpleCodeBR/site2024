@@ -34,6 +34,10 @@ p {
     font-family: 'Playfair Display', serif;
 }
 
+.white {
+    color: #f4f4f4;
+}
+
 .invisible {
     display: none;
 }
