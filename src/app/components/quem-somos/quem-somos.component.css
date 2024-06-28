@@ -1,12 +1,14 @@
 section {
-    height: calc(100vh - 400px);
+    height: calc(100vh - 240px);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 200px 400px;
+    padding: 120px;
 }
 
 i {
-    color: #fabe0e;
+    background-color: #fabe0e;
     font-style: italic;
+    font-weight: 500;
+    padding: 0 6px;
 }

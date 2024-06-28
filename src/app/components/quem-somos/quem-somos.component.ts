@@ -12,11 +12,14 @@ export class QuemSomosComponent implements OnInit {
     ngOnInit(): void {
         gsap.registerPlugin(ScrollTrigger);
         gsap.from('h2', {
-            y: -100,
-            opacity: 0,
             scrollTrigger: {
                 trigger: 'section',
+                start: 'top center',
+                toggleActions: 'play none none none',
             },
+            duration: 1,
+            y: 100,
+            opacity: 0,
         });
     }
 }

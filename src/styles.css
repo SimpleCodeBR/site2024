@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 html,
 body {
@@ -8,8 +8,8 @@ body {
 }
 
 body {
-    background-color: #141414;
-    color: #fafafa;
+    background-color: #fafafa;
+    color: #141414;
     font-family: 'Montserrat', sans-serif;
     font-optical-sizing: auto;
 }
@@ -20,9 +20,18 @@ h1 {
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 400;
-    line-height: 2.6rem;
+    line-height: 2.4rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+.playfair {
+    font-family: 'Playfair Display', serif;
 }
 
 .invisible {
