@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit, inject } from '@angular/core';
 import { ScrollService } from '../../services/scroll.service';
 import { Subject, takeUntil } from 'rxjs';
+import { TextPlugin, gsap } from 'gsap/all';
 
 @Component({
     selector: 'app-hero',
@@ -14,6 +15,8 @@ export class HeroComponent implements OnInit, OnDestroy {
     stop$ = new Subject<void>();
 
     ngOnInit(): void {
+        gsap.registerPlugin(TextPlugin);
+
         this.scrollService.scroll$
             .pipe(takeUntil(this.stop$))
             .subscribe((scrollY) => {
@@ -24,6 +27,18 @@ export class HeroComponent implements OnInit, OnDestroy {
                     scroll.classList.add('invisible');
                 }
             });
+
+        gsap.from('h1', {
+            duration: 2,
+            text: '',
+            ease: 'none',
+        });
+        gsap.from('.cta', {
+            delay: 2,
+            duration: 2,
+            opacity: 0,
+            ease: 'power1.out',
+        });
     }
 
     ngOnDestroy(): void {

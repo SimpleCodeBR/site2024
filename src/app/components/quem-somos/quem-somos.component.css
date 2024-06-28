@@ -1,0 +1,12 @@
+section {
+    height: calc(100vh - 400px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 400px;
+}
+
+i {
+    color: #fabe0e;
+    font-style: italic;
+}
