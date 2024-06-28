@@ -13,7 +13,7 @@ export class QuemSomosComponent implements OnInit {
         gsap.registerPlugin(ScrollTrigger);
         gsap.from('.quem-somos', {
             scrollTrigger: {
-                trigger: 'section',
+                trigger: '.simplecode',
                 start: 'top center',
                 toggleActions: 'play none none none',
             },

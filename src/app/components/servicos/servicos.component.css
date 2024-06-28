@@ -1,7 +1,13 @@
 section {
-    background-color: #eaeaea;
+    background-color: #f2f4f8;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+}
+
+section > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 img {
@@ -10,25 +16,15 @@ img {
     object-fit: cover;
 }
 
-.ux-title {
-    grid-column-start: 1;
-    padding: 120px;
+.title {
     background-color: #fabe0e;
 }
 
-.ux-title h2 {
-    font-size: 2.4em;
-    font-weight: 500;
-}
-
-.ux-text {
-    grid-column-start: 2;
+.text {
     padding: 32px;
 }
 
-.dev-title {
-    grid-column-start: 2;
-    grid-row-start: 2;
-    padding: 32px;
-    background-color: #fabe0e;
+.stats {
+    display: flex;
+    flex-direction: column;
 }

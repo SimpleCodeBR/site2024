@@ -27,7 +27,13 @@ export class MenuComponent implements OnInit, OnDestroy {
                     nav.classList.remove('scrolled');
                 }
             });
-        gsap.from('li', { duration: 0.8, y: -100, opacity: 0, stagger: 0.1 });
+
+        gsap.from('.menu li', {
+            duration: 0.8,
+            y: -100,
+            opacity: 0,
+            stagger: 0.1,
+        });
     }
 
     ngOnDestroy(): void {

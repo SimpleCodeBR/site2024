@@ -28,7 +28,7 @@ export class HeroComponent implements OnInit, OnDestroy {
                 }
             });
 
-        gsap.from('h1', {
+        gsap.from('.hero-text', {
             duration: 2,
             text: '',
             ease: 'none',
