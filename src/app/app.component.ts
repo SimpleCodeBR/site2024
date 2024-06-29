@@ -4,6 +4,7 @@ import { HeroComponent } from './components/hero/hero.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { QuemSomosComponent } from './components/quem-somos/quem-somos.component';
 import { ServicosComponent } from './components/servicos/servicos.component';
+import { ContatoComponent } from './components/contato/contato.component';
 
 @Component({
     selector: 'app-root',
@@ -16,6 +17,7 @@ import { ServicosComponent } from './components/servicos/servicos.component';
         MenuComponent,
         QuemSomosComponent,
         ServicosComponent,
+        ContatoComponent,
     ],
 })
 export class AppComponent {
