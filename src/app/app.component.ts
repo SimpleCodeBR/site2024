@@ -21,5 +21,5 @@ import { ContatoComponent } from './components/contato/contato.component';
     ],
 })
 export class AppComponent {
-    title = 'site2024';
+    title = 'SimpleCode';
 }
