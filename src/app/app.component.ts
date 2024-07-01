@@ -5,6 +5,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { QuemSomosComponent } from './components/quem-somos/quem-somos.component';
 import { ServicosComponent } from './components/servicos/servicos.component';
 import { ContatoComponent } from './components/contato/contato.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
     selector: 'app-root',
@@ -18,6 +19,7 @@ import { ContatoComponent } from './components/contato/contato.component';
         QuemSomosComponent,
         ServicosComponent,
         ContatoComponent,
+        FooterComponent,
     ],
 })
 export class AppComponent {

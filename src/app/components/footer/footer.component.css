@@ -1,0 +1,55 @@
+section {
+    background-color: #f1f2f4;
+    padding: 120px;
+    display: flex;
+}
+
+section > div {
+    flex: 1;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+a {
+    color: #141414;
+    text-decoration: none;
+}
+
+.pinterest {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.pinterest img {
+    width: 90px;
+    border-radius: 4px;
+}
+
+footer {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer i {
+    color: #fabe0e;
+    margin: 0 2px;
+}
+
+footer p {
+    margin: 0;
+}
