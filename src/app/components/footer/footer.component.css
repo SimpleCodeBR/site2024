@@ -43,6 +43,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 footer i {
@@ -52,4 +53,10 @@ footer i {
 
 footer p {
     margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        display: none;
+    }
 }

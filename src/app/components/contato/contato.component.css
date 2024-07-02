@@ -19,3 +19,10 @@ img {
 .lamp-on {
     display: none;
 }
+
+@media screen and (max-width: 768px) {
+    section {
+        height: unset;
+        padding: 80px 16px;
+    }
+}

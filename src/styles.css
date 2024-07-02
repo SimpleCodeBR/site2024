@@ -42,3 +42,15 @@ p {
 .invisible {
     display: none;
 }
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+}
