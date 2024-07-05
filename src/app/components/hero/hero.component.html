@@ -1,6 +1,7 @@
 <div class="hero-area" id="home">
     <ng-content></ng-content>
-    <video [muted]="true" autoplay loop class="hero-video" poster="assets/foto.jpg">
+    <img src="assets/foto.jpg" class="hero-video only-mobile" alt="Moça feliz interagindo com o celular">
+    <video [muted]="true" autoplay loop class="hero-video only-desktop" poster="assets/foto.jpg">
         <source src="assets/video.mp4" type="video/mp4">
     </video>
     <div class="overlay"></div>
