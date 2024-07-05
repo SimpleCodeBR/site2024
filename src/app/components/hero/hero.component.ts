@@ -45,4 +45,12 @@ export class HeroComponent implements OnInit, OnDestroy {
         this.stop$.next();
         this.stop$.complete();
     }
+
+    onClick(event: MouseEvent): void {
+        event.preventDefault();
+        const element = document.querySelector('#contato');
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
 }

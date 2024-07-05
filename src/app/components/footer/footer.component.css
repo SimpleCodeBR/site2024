@@ -22,6 +22,7 @@ li:not(:last-child) {
 }
 
 a {
+    cursor: pointer;
     color: #141414;
     text-decoration: none;
 }

@@ -3,14 +3,18 @@
         <img src="../../../assets/simplecode.png" alt="logo da simplecode">
     </a>
     <ul class="hide">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#quemsomos">Quem somos</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li *ngFor="let item of itemsMenu">
+            <a (click)="onClick($event, item)">
+                {{ item.title }}
+            </a>
+        </li>
         <li>
             <ul class="social">
-                <li><a href="#instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li *ngFor="let item of socialMenu">
+                    <a (click)="onClick($event, item)">
+                        <i [class]="item.icon"></i>
+                    </a>
+                </li>
             </ul>
         </li>
     </ul>

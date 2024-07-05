@@ -1,4 +1,4 @@
-<div class="hero-area">
+<div class="hero-area" id="home">
     <ng-content></ng-content>
     <video [muted]="true" autoplay loop class="hero-video" poster="assets/foto.jpg">
         <source src="assets/video.mp4" type="video/mp4">
@@ -8,7 +8,7 @@
         <h1 class="hero-text">
             Combinamos tecnologia e design para criar interfaces intuitivas e envolventes
         </h1>
-        <a href="#contact" class="cta">Solicite um orçamento</a>
+        <a href="#contact" class="cta" (click)="onClick($event)">Solicite um orçamento</a>
     </div>
     <div class="scroll white">
         &nbsp;<i class="fa-solid fa-arrow-down fa-bounce"></i>&nbsp;
