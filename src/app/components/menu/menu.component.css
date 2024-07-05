@@ -56,14 +56,32 @@
     gap: 16px;
 }
 
+.menu-toggle {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     .menu {
-        width: 100%;
+        width: calc(100% - 32px);
         padding: 32px 16px;
-        justify-content: start;
+        align-items: flex-start;
     }
 
     .menu ul {
-        display: none;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-toggle i {
+        color: #f4f4f4;
+    }
+
+    .hide {
+        display: none !important;
     }
 }

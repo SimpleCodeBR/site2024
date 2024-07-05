@@ -40,4 +40,15 @@ export class MenuComponent implements OnInit, OnDestroy {
         this.stop$.next();
         this.stop$.complete();
     }
+
+    toggleMenu(): void {
+        const menu = document.querySelector('.menu ul');
+        const open = document.querySelector('.fa-bars');
+        const close = document.querySelector('.fa-xmark');
+        if (menu && open && close) {
+            menu.classList.toggle('hide');
+            open.classList.toggle('hide');
+            close.classList.toggle('hide');
+        }
+    }
 }

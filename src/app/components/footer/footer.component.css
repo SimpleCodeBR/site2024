@@ -65,4 +65,8 @@ footer p {
     section {
         display: none;
     }
+
+    footer p {
+        font-size: 12px;
+    }
 }
