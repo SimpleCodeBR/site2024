@@ -25,7 +25,7 @@ export class ContatoComponent implements OnInit {
                 gsap.to(lampOff, {
                     opacity: 0,
                     duration: 1,
-                    delay: 1.4,
+                    delay: 1.2,
                     onComplete: () => {
                         lampOff.style.display = 'none';
                         lampOn.style.display = 'block';

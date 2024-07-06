@@ -48,7 +48,7 @@ export class HeroComponent implements OnInit, AfterViewInit, OnDestroy {
         });
         gsap.from('.cta', {
             delay: 2,
-            duration: 3,
+            duration: 2.4,
             opacity: 0,
             ease: 'power1.out',
         });
