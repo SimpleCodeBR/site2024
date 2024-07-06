@@ -9,7 +9,7 @@ import {
 } from '@angular/core';
 import { ScrollService } from '../../services/scroll.service';
 import { Subject, takeUntil } from 'rxjs';
-import { TextPlugin, gsap } from 'gsap/all';
+import { TextPlugin, ScrollTrigger, gsap } from 'gsap/all';
 import { VideoService } from '../../services/video.service';
 
 @Component({
@@ -27,7 +27,7 @@ export class HeroComponent implements OnInit, AfterViewInit, OnDestroy {
     stop$ = new Subject<void>();
 
     ngOnInit(): void {
-        gsap.registerPlugin(TextPlugin);
+        gsap.registerPlugin(TextPlugin, ScrollTrigger);
 
         this.scrollService.scroll$
             .pipe(takeUntil(this.stop$))
@@ -41,13 +41,14 @@ export class HeroComponent implements OnInit, AfterViewInit, OnDestroy {
             });
 
         gsap.from('.hero-text', {
-            duration: 2,
+            duration: 2.4,
             text: '',
             ease: 'none',
+            delay: 1,
         });
         gsap.from('.cta', {
             delay: 2,
-            duration: 2,
+            duration: 3,
             opacity: 0,
             ease: 'power1.out',
         });
