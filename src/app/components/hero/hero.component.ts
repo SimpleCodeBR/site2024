@@ -1,7 +1,16 @@
-import { Component, OnDestroy, OnInit, inject } from '@angular/core';
+import {
+    AfterViewInit,
+    Component,
+    ElementRef,
+    OnDestroy,
+    OnInit,
+    ViewChild,
+    inject,
+} from '@angular/core';
 import { ScrollService } from '../../services/scroll.service';
 import { Subject, takeUntil } from 'rxjs';
 import { TextPlugin, gsap } from 'gsap/all';
+import { VideoService } from '../../services/video.service';
 
 @Component({
     selector: 'app-hero',
@@ -10,8 +19,11 @@ import { TextPlugin, gsap } from 'gsap/all';
     templateUrl: './hero.component.html',
     styleUrl: './hero.component.css',
 })
-export class HeroComponent implements OnInit, OnDestroy {
+export class HeroComponent implements OnInit, AfterViewInit, OnDestroy {
+    @ViewChild('video') videoRef!: ElementRef<HTMLVideoElement>;
+
     scrollService = inject(ScrollService);
+    videoService = inject(VideoService);
     stop$ = new Subject<void>();
 
     ngOnInit(): void {
@@ -38,6 +50,12 @@ export class HeroComponent implements OnInit, OnDestroy {
             duration: 2,
             opacity: 0,
             ease: 'power1.out',
+        });
+    }
+
+    ngAfterViewInit(): void {
+        this.videoRef.nativeElement.addEventListener('loadeddata', () => {
+            this.videoService.video$.next(true);
         });
     }
 
