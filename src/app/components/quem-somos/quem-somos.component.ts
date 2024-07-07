@@ -22,9 +22,6 @@ export class QuemSomosComponent implements OnInit {
             duration: 1,
             y: 100,
             opacity: 0,
-            onEnter: () => {
-                console.log('ScrollTrigger onEnter fired');
-            },
         });
     }
 }
