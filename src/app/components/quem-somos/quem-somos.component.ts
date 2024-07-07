@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ScrollTrigger, gsap } from 'gsap/all';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 @Component({
     selector: 'app-quem-somos',
@@ -10,7 +13,6 @@ import { ScrollTrigger, gsap } from 'gsap/all';
 })
 export class QuemSomosComponent implements OnInit {
     ngOnInit(): void {
-        gsap.registerPlugin(ScrollTrigger);
         gsap.from('.quem-somos', {
             scrollTrigger: {
                 trigger: '.simplecode',
@@ -20,6 +22,9 @@ export class QuemSomosComponent implements OnInit {
             duration: 1,
             y: 100,
             opacity: 0,
+            onEnter: () => {
+                console.log('ScrollTrigger onEnter fired');
+            },
         });
     }
 }
